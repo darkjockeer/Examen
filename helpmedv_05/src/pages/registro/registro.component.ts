@@ -8,6 +8,13 @@ import { PersonaService } from 'src/servicio/persona.service';
     styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent implements OnInit {
+    public  contrasena= "";
+    public usuario="";
+    public servicio: PersonaService;
+    constructor(personaServicio:PersonaService) {
+      this.servicio = personaServicio; 
+     }
+
     public  persona: IPersona ={
         nombre: '',
         apellido: '',
@@ -16,11 +23,6 @@ export class RegistroComponent implements OnInit {
         usuario: '',
       }
           
-      private servicio: PersonaService;
-
-      constructor(personaServicio:PersonaService) {
-        this.servicio = personaServicio; 
-       }
     
       public agregarPersona(){
         console.log(this.persona);
