@@ -10,6 +10,10 @@ import { mapsComponent } from 'src/pages/maps/maps.component';
 
 import { MainComponent } from 'src/pages/main/main.component';
 import { RegistroComponent } from 'src/pages/registro/registro.component';
+import { emergenciaGraveComponent } from 'src/pages/notasEmergencia/emergenciaGrave/emergenciaGrave.component';
+import { emergenciaMediaComponent } from 'src/pages/notasEmergencia/emergenciaMedia/emergenciaMedia.component';
+import { emergenciaMenorComponent } from 'src/pages/notasEmergencia/emergenciaMenor/emergenciaMenor.component';
+import { sinEmergenciaComponent } from 'src/pages/notasEmergencia/sinEmergencia/sinEmergencia.component';
 
 
 
@@ -52,7 +56,22 @@ const routes: Routes = [
     path: 'maps',
     component: mapsComponent
   },
-
+  {
+    path:'emergenciaGrave',
+    component: emergenciaGraveComponent
+  },
+  {
+    path:'emergenciaMedia',
+    component: emergenciaMediaComponent
+  },
+  {
+    path:'emergenciaMenor',
+    component: emergenciaMenorComponent
+  },
+  {
+    path:'sinEmergencia',
+    component: sinEmergenciaComponent
+  }
 
 
 

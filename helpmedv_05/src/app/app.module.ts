@@ -19,6 +19,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { RegistroComponent } from 'src/pages/registro/registro.component';
 import { PersonaService } from 'src/servicio/persona.service';
+import { emergenciaGraveComponent } from 'src/pages/notasEmergencia/emergenciaGrave/emergenciaGrave.component';
+import { emergenciaMediaComponent } from 'src/pages/notasEmergencia/emergenciaMedia/emergenciaMedia.component';
+import { emergenciaMenorComponent } from 'src/pages/notasEmergencia/emergenciaMenor/emergenciaMenor.component';
+import { sinEmergenciaComponent } from 'src/pages/notasEmergencia/sinEmergencia/sinEmergencia.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,10 @@ import { PersonaService } from 'src/servicio/persona.service';
     reclamosSugerenciasComponent,
     asistenciaTelefonicaComponent,
     mapsComponent,
-    
+    emergenciaGraveComponent,
+    emergenciaMediaComponent,
+    emergenciaMenorComponent,
+    sinEmergenciaComponent
   ],
 
 
